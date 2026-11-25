@@ -1,0 +1,18 @@
+{
+  "name": "context-keeper",
+  "version": "1.0.0",
+  "description": "Tells you when to compact, clear or start a new chat, and hands the next chat a short summary of the last one. /coach /backup /restore",
+  "author": {
+    "name": "Amine Hammou",
+    "url": "https://github.com/zed-dz"
+  },
+  "homepage": "https://github.com/zed-dz/claude-code-mods/tree/main/mods/context-keeper",
+  "repository": "https://github.com/zed-dz/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "context",
+    "memory",
+    "handoff"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "done-check",
+  "version": "1.0.0",
+  "description": "Flags every turn where Claude changed code but ran no build, test or check afterwards, and can send it back to run one. /done",
+  "author": {
+    "name": "Amine Hammou",
+    "url": "https://github.com/zed-dz"
+  },
+  "homepage": "https://github.com/zed-dz/claude-code-mods/tree/main/mods/done-check",
+  "repository": "https://github.com/zed-dz/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "verification",
+    "tests",
+    "quality"
+  ],
+  "types": "./types/index.d.ts"
+}

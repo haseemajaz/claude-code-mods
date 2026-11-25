@@ -1,0 +1,18 @@
+{
+  "name": "billing-meter",
+  "version": "1.0.0",
+  "description": "Hours per client or project, measured from your Claude Code chats, with CSV timesheets. /bill",
+  "author": {
+    "name": "Amine Hammou",
+    "url": "https://github.com/zed-dz"
+  },
+  "homepage": "https://github.com/zed-dz/claude-code-mods/tree/main/mods/billing-meter",
+  "repository": "https://github.com/zed-dz/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "time-tracking",
+    "timesheet",
+    "freelance"
+  ]
+}

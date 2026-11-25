@@ -1,0 +1,22 @@
+name: Something is wrong
+description: A mod did the wrong thing, or said nothing when it should have
+labels: [bug]
+body:
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Which mod
+      options: [done-check, context-keeper, command-deck, billing-meter, install or marketplace]
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      label: Claude Code version and system
+      placeholder: 2.1.326, macOS 15, terminal
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+      description: The exact command, reply or config helps most. Take out names and keys first.
+    validations: { required: true }

@@ -1,0 +1,14 @@
+name: An idea
+description: A rule, a check or a mod you miss
+labels: [enhancement]
+body:
+  - type: textarea
+    id: annoyance
+    attributes:
+      label: The annoyance
+      description: What happened to you, and how often
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would fix it

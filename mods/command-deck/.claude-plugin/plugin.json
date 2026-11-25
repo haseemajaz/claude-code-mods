@@ -1,0 +1,19 @@
+{
+  "name": "command-deck",
+  "version": "1.0.0",
+  "description": "One list of what needs you across every Claude Code chat on this computer, with tick-off. /deck",
+  "author": {
+    "name": "Amine Hammou",
+    "url": "https://github.com/zed-dz"
+  },
+  "homepage": "https://github.com/zed-dz/claude-code-mods/tree/main/mods/command-deck",
+  "repository": "https://github.com/zed-dz/claude-code-mods",
+  "license": "MIT",
+  "keywords": [
+    "mod",
+    "tasks",
+    "sessions",
+    "productivity"
+  ],
+  "types": "./types/index.d.ts"
+}

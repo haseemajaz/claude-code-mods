@@ -1,0 +1,61 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mods:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        claude: ["2.1.326", "latest"]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    env:
+      CLAUDE_CONFIG_DIR: ${{ github.workspace }}/.ci-config
+      DISABLE_AUTOUPDATER: "1"
+      CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Claude Code (no login needed for these checks)
+        run: npm install --global @anthropic-ai/claude-code@${{ matrix.claude }} && claude --version
+      - name: Shared files match
+        run: node scripts/shared.mjs --check
+      - name: Validate, types included
+        run: claude plugin validate --strict .
+      - name: Run every mod's tests
+        run: |
+          for mod in mods/*/; do
+            echo "== $mod"
+            claude plugin test "$mod"
+          done
+      - name: Install from this folder
+        run: |
+          claude plugin marketplace add ./
+          for mod in mods/*/; do claude plugin install "$(basename "$mod")@zed-mods"; done
+          claude plugin list
+
+  python:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.9", "3.14"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python mods/billing-meter/engine/test_billing.py

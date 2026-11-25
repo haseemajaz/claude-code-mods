@@ -1,0 +1,6 @@
+__pycache__/
+.ci-config/
+.claude-plugin/types/
+node_modules/
+*.log
+.DS_Store

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img" aria-label="claude-code-mods. Claude said done. Did it check? Four small mods for Claude Code.">
+<rect width="1280" height="420" rx="18" fill="#FAF6EF"/>
+<rect x="64" y="72" width="46" height="8" fill="#CC2027"/>
+<text x="64" y="150" font-family="ui-monospace,'Cascadia Mono',Consolas,Menlo,monospace" font-size="30" font-weight="600" fill="#1B1A17">claude-code-mods</text>
+<text x="62" y="236" font-family="'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-1.5" fill="#1B1A17">Claude said done.</text>
+<text x="62" y="308" font-family="'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-1.5" fill="#CC2027">Did it check?</text>
+<text x="64" y="362" font-family="'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="24" fill="#5E594F">Four small mods that check, remember and count.</text>
+<g transform="translate(716 70)">
+<rect width="500" height="280" rx="14" fill="#FFFDF8" stroke="#DDD5C6" stroke-width="2"/>
+<path d="M0 44H500" stroke="#DDD5C6" stroke-width="2"/>
+<rect x="22" y="17" width="44" height="10" rx="5" fill="#DDD5C6"/><rect x="74" y="17" width="24" height="10" rx="5" fill="#DDD5C6"/>
+<g font-family="ui-monospace,'Cascadia Mono',Consolas,Menlo,monospace" font-size="20" fill="#1B1A17">
+<text x="26" y="88"><tspan fill="#5E594F">&gt;</tspan> Add 20% tax to the total</text>
+<text x="26" y="130">Done! Totals include tax.</text>
+<text x="26" y="172"><tspan fill="#CC2027">unverified</tspan><tspan fill="#5E594F"> · 1 file · /done</tspan></text>
+<text x="26" y="214"><tspan fill="#5E594F">$</tspan> npm test  <tspan fill="#5E594F">2 of 2 pass</tspan></text>
+</g>
+<path d="M0 236H500" stroke="#DDD5C6" stroke-width="2"/>
+<text x="474" y="266" text-anchor="end" font-family="ui-monospace,'Cascadia Mono',Consolas,Menlo,monospace" font-size="19" font-weight="700" fill="#1B1A17">verified ✓</text>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "name": "zed-mods",
+  "owner": {
+    "name": "Amine Hammou",
+    "url": "https://github.com/zed-dz"
+  },
+  "metadata": {
+    "description": "Four small mods for Claude Code: verified work, context that survives, one to-do list across chats, and hours per client."
+  },
+  "plugins": [
+    {
+      "name": "done-check",
+      "source": "./mods/done-check",
+      "description": "Flags every turn where Claude changed code but ran no build, test or check afterwards, and can send it back to run one. /done"
+    },
+    {
+      "name": "context-keeper",
+      "source": "./mods/context-keeper",
+      "description": "Tells you when to compact, clear or start a new chat, and hands the next chat a short summary of the last one. /coach /backup /restore"
+    },
+    {
+      "name": "command-deck",
+      "source": "./mods/command-deck",
+      "description": "One list of what needs you across every Claude Code chat on this computer, with tick-off. /deck"
+    },
+    {
+      "name": "billing-meter",
+      "source": "./mods/billing-meter",
+      "description": "Hours per client or project, measured from your Claude Code chats, with CSV timesheets. /bill"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "basis": "you",
+  "round_minutes": 15,
+  "busy_gap_minutes": 15,
+  "idle_cap_minutes": 20,
+  "words_per_minute": 35,
+  "paste_words": 300,
+  "currency": "USD",
+  "utc_offset_hours": null,
+  "timesheets_dir": "",
+  "descriptions": false,
+  "projects": []
+}
